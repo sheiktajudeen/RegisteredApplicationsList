@@ -1,0 +1,17 @@
+{
+  "name": "RegisteredApplicationsList",
+  "version": "1.0.0",
+  "description": "This fetches the registered applications list from eureka.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.5.3",
+    "express": "^4.12.3",
+    "forever": "^0.14.1",
+    "node-rest-client": "^1.5.0"
+  },
+  "author": "sheik",
+  "license": "ISC"
+}

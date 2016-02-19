@@ -1,5 +1,3 @@
-# RegisteredApplicationsList
-
 This API gets the list of registered applications from Eureka
 
 Commands:
@@ -20,6 +18,3 @@ node app.js
 
 To see the API response:
 curl -v "http://localhost:3000/getRegisteredApplications"
-
-From browser:
-http://localhost:3000/getRegisteredApplications
