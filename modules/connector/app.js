@@ -1,24 +1,17 @@
-var express = require('express');
-var cors = require('cors');
-var config = require('../../config/AppConfig.json');
-var nodeClient = require('node-rest-client');
+const axios = require('axios');
+const express = require('express');
 
+var config = require('../../config/AppConfig.json');
 var app = express();
-app.use(cors());
 
 app.get('/getRegisteredApplications', function (req, res) {
-
-    var restClient = nodeClient.Client,
-        cl = new restClient();
-
-    cl.get(config.EngProdEureka, function (data, response) { //GET the Registered Applications from Eureka
-        //console.log(JSON.stringify(data));
-        res.json(JSON.stringify(data));
-    });
+  axios.get(config.EngProdEureka).then((response) => {
+    return res.send(response.data);
+  });
 });
 
 var server = app.listen(3000, function () {
     console.log("Express Started on Port 3000");
 });
 
-
+module.exports = {app};
