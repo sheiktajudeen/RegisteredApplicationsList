@@ -1,4 +1,5 @@
 This API gets the list of registered applications from Eureka. Replace the eureka url config/AppConfig.json
+I am leaving the response open ended. You can parse throught the response to get the state of each application that is registered to eureka url.
 
 Commands:
 HomeBrew install command:
