@@ -1,4 +1,4 @@
-This API gets the list of registered applications from Eureka
+This API gets the list of registered applications from Eureka. Replace the eureka url config/AppConfig.json
 
 Commands:
 HomeBrew install command:
@@ -13,8 +13,11 @@ npm install
 
 
 Start the node server:(to be run from modules/connector path)
-node app.js
+node modules/connector/app.js
 
 
 To see the API response:
 curl -v "http://localhost:3000/getRegisteredApplications"
+
+To use test method:
+npm run test-watch
